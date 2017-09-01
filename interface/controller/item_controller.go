@@ -1,7 +1,6 @@
 package controller
 
 import (
-	"log"
 	"net/http"
 	"strconv"
 	"github.com/labstack/echo"
@@ -17,18 +16,9 @@ type ItemController struct {
 
 // コントローラを生成
 func NewItemController(dbConfig config.Database) *ItemController {
-	// データベースを選択
-	var itemRepository usecase.ItemRepository
-	switch dbConfig.Engine {
-	case "sqlite3":
-		itemRepository = database.NewSqlite3ItemRepository(dbConfig.Source)
-	default:
-		log.Fatalf("Unknown database engine: %s", dbConfig.Engine)
-	}
-
 	return &ItemController{
 		Interactor: usecase.ItemInteractor{
-			ItemRepository: itemRepository,
+			ItemRepository: database.NewItemRepository(dbConfig),
 		},
 	}
 }

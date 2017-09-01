@@ -1,12 +1,14 @@
-hash: 20e38e380f877d3125d803c180d2a8d4b656d92726e63d5af71a58fc9f20d0be
-updated: 2017-08-21T12:22:47.315115324+09:00
+hash: e927beeb1ad43194062cfa717c5f50ffa67d6b5422143a95f953a62e40e7994f
+updated: 2017-09-01T15:37:09.263474286+09:00
 imports:
 - name: github.com/BurntSushi/toml
   version: b26d9c308763d68093482582cea63d69be07a0f0
 - name: github.com/dgrijalva/jwt-go
   version: a539ee1a749a2b895533f979515ac7e6e0f5b650
+- name: github.com/gocraft/dbr
+  version: b2f0ffcef2a64c0729d5818e103bc019caed7b22
 - name: github.com/labstack/echo
-  version: 935a60782cbbc55110e7bd4b33120e4567cbee43
+  version: cec7629194fe4bf83b0c72d9a02d340c7a1468ac
   subpackages:
   - middleware
 - name: github.com/labstack/gommon
@@ -27,16 +29,16 @@ imports:
 - name: github.com/valyala/fasttemplate
   version: dcecefd839c4193db0d35b88ec65b4c12d360ab0
 - name: golang.org/x/crypto
-  version: eb71ad9bd329b5ac0fd0148dd99bd62e8be8e035
+  version: 81e90905daefcd6fd217b62423c0908922eadb30
   subpackages:
   - acme
   - acme/autocert
 - name: golang.org/x/net
-  version: 1c05540f6879653db88113bc4a2b70aec4bd491f
+  version: 66aacef3dd8a676686c7ae3716979581e8b03c47
   subpackages:
   - context
 - name: golang.org/x/sys
-  version: 43e60d72a8e2bd92ee98319ba9a384a0e9837c08
+  version: a07a691ac871746ae690ccf3ab217363b2144531
   subpackages:
   - unix
 testImports: []
