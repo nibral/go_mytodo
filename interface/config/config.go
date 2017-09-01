@@ -33,7 +33,7 @@ func init() {
 	workingDir := filepath.Dir(exec)
 
 	// 設定ファイル読み込み
-	file := workingDir + "/" + env + ".conf.toml"
+	file := workingDir + "/config/" + env + ".conf.toml"
 	_, err = toml.DecodeFile(file, &Config)
 	if err != nil {
 		log.Fatal(err)
