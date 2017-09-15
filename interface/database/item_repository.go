@@ -78,7 +78,12 @@ func (repo *ItemRepository) Get(id int) (*domain.Item, error) {
 func (repo *ItemRepository) GetAll() ([]*domain.Item, error) {
 	// 条件指定なしでアイテムを取得
 	var items []*domain.Item
-	repo.dbSession.Select("*").From("items").Load(&items)
+	num, _ := repo.dbSession.Select("*").From("items").Load(&items)
+
+	// アイテムが0件の場合は空配列を返す
+	if num == 0 {
+		return make([]*domain.Item, 0), nil
+	}
 
 	return items, nil
 }
