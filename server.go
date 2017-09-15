@@ -3,8 +3,8 @@ package main
 import (
 	"github.com/labstack/echo/middleware"
 
-	"mytodo/interface/config"
-	"mytodo/interface/controller"
+	"go_mytodo/interface/config"
+	"go_mytodo/interface/controller"
 )
 
 func main() {

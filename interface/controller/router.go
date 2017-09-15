@@ -2,7 +2,7 @@ package controller
 
 import (
 	"github.com/labstack/echo"
-	"mytodo/interface/config"
+	"go_mytodo/interface/config"
 )
 
 type Router struct{}

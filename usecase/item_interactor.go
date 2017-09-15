@@ -1,6 +1,8 @@
 package usecase
 
-import "mytodo/domain"
+import (
+	"go_mytodo/domain"
+)
 
 type ItemInteractor struct {
 	ItemRepository ItemRepository

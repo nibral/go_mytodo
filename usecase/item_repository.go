@@ -1,7 +1,7 @@
 package usecase
 
 import (
-	"mytodo/domain"
+	"go_mytodo/domain"
 )
 
 // UseCase(内)からDB(外)を呼ぶためのインターフェイス

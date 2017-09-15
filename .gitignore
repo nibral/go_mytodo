@@ -1,5 +1,5 @@
 vendor/
-mytodo
+go_mytodo
 *.db
 
 .idea/

@@ -6,8 +6,8 @@ import (
 	"log"
 	"github.com/gocraft/dbr"
 	_ "github.com/mattn/go-sqlite3"
-	"mytodo/domain"
-	"mytodo/interface/config"
+	"go_mytodo/domain"
+	"go_mytodo/interface/config"
 )
 
 type ItemRepository struct {

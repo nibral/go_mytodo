@@ -4,10 +4,10 @@ import (
 	"net/http"
 	"strconv"
 	"github.com/labstack/echo"
-	"mytodo/domain"
-	"mytodo/usecase"
-	"mytodo/interface/config"
-	"mytodo/interface/database"
+	"go_mytodo/domain"
+	"go_mytodo/usecase"
+	"go_mytodo/interface/config"
+	"go_mytodo/interface/database"
 )
 
 type ItemController struct {
