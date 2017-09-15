@@ -1,5 +1,5 @@
 hash: e927beeb1ad43194062cfa717c5f50ffa67d6b5422143a95f953a62e40e7994f
-updated: 2017-09-01T15:37:09.263474286+09:00
+updated: 2017-09-15T15:29:40.34581187+09:00
 imports:
 - name: github.com/BurntSushi/toml
   version: b26d9c308763d68093482582cea63d69be07a0f0
@@ -7,6 +7,8 @@ imports:
   version: a539ee1a749a2b895533f979515ac7e6e0f5b650
 - name: github.com/gocraft/dbr
   version: b2f0ffcef2a64c0729d5818e103bc019caed7b22
+  subpackages:
+  - dialect
 - name: github.com/labstack/echo
   version: cec7629194fe4bf83b0c72d9a02d340c7a1468ac
   subpackages:
